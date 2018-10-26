@@ -1,0 +1,99 @@
+canvas { 
+    width: 100%; 
+    height: 50% 
+}
+
+body { 
+    margin: 0; 
+    overflow: hidden;
+    background-color: #222222;
+    //background: -webkit-linear-gradient(#220088,#000000);
+}
+
+@font-face {
+  font-family: digital7;
+  src: url(digital7.ttf);
+}
+
+.box {
+    background-color: rgba(0,0,0,0.7);
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 3px 3px 3px 3px;
+    width: auto;
+    overflow: hidden;
+    z-index: 5;
+}
+
+#timer {
+    position: absolute;
+    left: 100px;
+    margin: 10px 10px 10px 10px;
+    overflow: hidden;
+    width: 800px;
+    font-family: digital7, sans-serif;
+    text-shadow:0px 0px 5px #ffffff; 
+    color: rgba(255,0,0,1);
+    font-size: 150px;
+}
+
+#announce-container {
+    position: absolute;
+    right: 10px;
+    margin: 10px 10px 10px 10px;
+    overflow: hidden;
+    width: 500px;
+    font-family: 'Play', 'Microsoft JhengHei', sans-serif;
+    text-shadow:0px 0px 5px #0090ff; 
+    color: rgba(255,255,255,0.8);
+}
+#announce {
+    min-width: 360px;
+    min-height: 150px;
+    max-height: 150px;
+    overflow: auto;
+    font-size: 14px;
+}
+#announce::-webkit-scrollbar { 
+    display: none; 
+}
+
+#graph {
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    right: 40px;
+    bottom: 50px;
+    z-index: 0;
+}
+
+path {
+	//stroke: DodgerBlue;
+	stroke-width: 1;
+	fill: none;
+}
+text{
+    fill: lightgrey;
+    font-family: 'Play', 'Microsoft JhengHei', sans-serif;
+    font-size: 13px;
+}
+.axis {
+	font-size: 11px;
+	fill: gray;
+}
+.x.axis line {
+  fill: none;
+  stroke: lightgrey;
+}
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+.x.axis path {
+  //stroke: #fafafa;
+  fill: none;
+  stroke: lightgrey;
+}
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: lightgrey;
+}
